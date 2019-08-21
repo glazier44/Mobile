@@ -8,9 +8,9 @@
     <ProjectGuid>{D47B3224-ABE2-4D6A-A0C2-EF19F8C59AD3}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlankApp1.iOS</RootNamespace>
+    <RootNamespace>MobileApp.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>BlankApp1.iOS</AssemblyName>
+    <AssemblyName>MobileApp.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -193,9 +193,9 @@
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1367" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlankApp1\BlankApp1.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
-      <Name>BlankApp1</Name>
+    <ProjectReference Include="..\MobileApp\MobileApp.csproj">
+      <Project>{4D2BE94B-1826-4305-8974-6B576BF14364}</Project>
+      <Name>MobileApp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

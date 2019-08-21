@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlankApp1.Droid</RootNamespace>
-    <AssemblyName>BlankApp1.Android</AssemblyName>
+    <RootNamespace>MobileApp.Android</RootNamespace>
+    <AssemblyName>MobileApp.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
@@ -95,9 +95,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlankApp1\BlankApp1.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
-      <Name>BlankApp1</Name>
+    <ProjectReference Include="..\MobileApp\MobileApp.csproj">
+      <Project>{4D2BE94B-1826-4305-8974-6B576BF14364}</Project>
+      <Name>MobileApp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
