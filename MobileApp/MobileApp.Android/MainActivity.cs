@@ -1,12 +1,13 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using MobileApp.Android;
 using Prism;
 using Prism.Ioc;
 
-namespace BlankApp1.Droid
+namespace MobileApp.Droid
 {
-    [Activity(Label = "BlankApp1", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "MobileApp", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

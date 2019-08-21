@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using UIKit;
 
-using Foundation;
-using UIKit;
-
-namespace BlankApp1.iOS
+namespace MobileApp.iOS
 {
     public class Application
     {

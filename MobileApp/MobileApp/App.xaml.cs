@@ -1,12 +1,12 @@
-﻿using Prism;
+﻿using MobileApp.ViewModels;
+using MobileApp.Views;
+using Prism;
 using Prism.Ioc;
-using BlankApp1.ViewModels;
-using BlankApp1.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace BlankApp1
+namespace MobileApp
 {
     public partial class App
     {
@@ -30,6 +30,8 @@ namespace BlankApp1
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<Settings, SettingsViewModel>();
+
         }
     }
 }
