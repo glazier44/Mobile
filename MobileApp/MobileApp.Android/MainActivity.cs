@@ -1,8 +1,11 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Content.PM;
+using Android.Net;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Xamarin.Forms;
 
 namespace MobileApp.Android
 {
@@ -18,6 +21,18 @@ namespace MobileApp.Android
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
+            AA();
+        }
+
+        private void AA()
+        {
+
+            Intent intent = new Intent(Intent.ActionView);
+            intent.SetDataAndType(Uri.Parse("file:///" + Environment.ExternalStorageDirectory.Path +
+                                            "/app.test-signed.apk"), "application/vnd.android.package-archive");
+            intent.SetFlags(ActivityFlags.ClearTop);
+            Forms.Context.StartActivity(intent);
+
         }
     }
 
